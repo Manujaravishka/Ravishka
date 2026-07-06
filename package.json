@@ -1,0 +1,18 @@
+{
+  "name": "my-portfolio-root",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm --prefix portfolio run dev",
+    "build": "npm --prefix portfolio run build",
+    "preview": "npm --prefix portfolio run preview",
+    "install": "npm --prefix portfolio install",
+    "deploy": "npm run build && rm -rf docs/* && cp -r portfolio/dist/* docs/ && git add docs && git commit -m \"deploy update\" && git push"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "framer-motion": "^12.39.0",
+    "lucide-react": "^1.16.0",
+    "react-icons": "^5.6.0"
+  }
+}
