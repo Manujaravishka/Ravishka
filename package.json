@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "npm --prefix portfolio run dev",
     "build": "npm --prefix portfolio run build",
+    "export": "npm --prefix portfolio run export",
     "preview": "npm --prefix portfolio run preview",
-    "install": "npm --prefix portfolio install",
-    "deploy": "npm run build && rm -rf docs/* && cp -r portfolio/dist/* docs/ && git add docs && git commit -m \"deploy update\" && git push"
+    "install": "npm --prefix portfolio install"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
