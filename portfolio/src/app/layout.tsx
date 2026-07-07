@@ -20,12 +20,14 @@ const outfit = Outfit({
   display: 'swap',
 })
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 export const metadata: Metadata = {
   title: 'Ravishka',
   description:
     'UI/UX Designer passionate about creating modern, user-friendly, and visually engaging digital experiences with clean and creative designs.',
   icons: {
-    icon: '/favicons.ico',
+    icon: `${basePath}/favicons.ico`,
   },
 }
 

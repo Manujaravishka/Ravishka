@@ -4,6 +4,7 @@ import { JSX } from 'react';
 import { motion } from 'framer-motion';
 import Button from './Button';
 import { FaGithub } from 'react-icons/fa';
+import { asset } from '@/lib/asset';
 
 // ව්‍යාපෘති දත්ත
 const projects = [
@@ -13,7 +14,7 @@ const projects = [
     subtitle: 'Digital Ayurveda & Hela Wedakama Platform',
     description: 'Developed a full-stack healthcare platform to modernize Sri Lanka’s traditional medicine ecosystem by connecting patients with Ayurveda and Hela Wedakama practitioners.',
     tags: ['Java', 'Spring Boot', 'Spring Security', 'MySQL', 'JavaScript', 'Healthcare'],
-    image: 'project/project_1.jpg',
+    image: '/project/project_1.jpg',
     link: 'https://github.com/Manujaravishka/Ceylon-Traditional-Medicine-Center',
     codeLink: 'https://github.com/Manujaravishka/Ceylon-Traditional-Medicine-Center',
     icon: (
@@ -38,7 +39,7 @@ const projects = [
     "Google OAuth",
     "Cloudinary",
     "Vercel"],
-    image: 'project/project_3.png',
+    image: '/project/project_3.png',
     link: 'https://github.com/Manujaravishka/Flower-Shop-Backend',
     codeLink: 'https://github.com/Manujaravishka/Flower-Shop-Frontend',
     icon: (
@@ -60,7 +61,7 @@ const projects = [
     "Responsive",
     "SEO",
     "Static Export"],
-    image: 'project/project_4.png',
+    image: '/project/project_4.png',
     link: 'https://github.com/Manujaravishka/nivora-designs',
     codeLink: 'https://github.com/Manujaravishka/nivora-designs',
     icon: (
@@ -81,7 +82,7 @@ const projects = [
     "Framer Motion",
     "Educational",
     "SEO"],
-    image: 'project/project_2.png',
+    image: '/project/project_2.png',
     link: 'https://github.com/Manujaravishka/Gittering-Stars',
     codeLink: 'https://github.com/Manujaravishka/Gittering-Stars',
     icon: (
@@ -102,7 +103,7 @@ const projects = [
     "SEO",
     "Travel",
     "Business Website"],
-    image: 'project/project_5.png',
+    image: '/project/project_5.png',
     link: 'https://github.com/Manujaravishka/web-site',
     codeLink: 'https://github.com/Manujaravishka/web-site',
     icon: (
@@ -136,7 +137,7 @@ export default function Projects(): JSX.Element {
             >
               <div className="flex flex-col h-full rounded-[22px] bg-[#0a0a0a] overflow-hidden">
                 <div className="relative aspect-[16/9] overflow-hidden">
-                  <img src={project.image} alt={project.title} className="h-full w-full object-cover transition duration-700 group-hover:scale-110" />
+                  <img src={asset(project.image)} alt={project.title} className="h-full w-full object-cover transition duration-700 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
                 </div>
 

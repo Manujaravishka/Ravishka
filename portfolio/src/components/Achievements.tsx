@@ -2,6 +2,7 @@
 
 import { JSX, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { asset } from '@/lib/asset';
 
 interface Certificate {
   id: number;
@@ -156,7 +157,7 @@ export default function CertificatesSection(): JSX.Element {
                     className="relative mt-3 aspect-[21/9] w-full overflow-hidden rounded-lg border border-zinc-900 bg-zinc-950/40 cursor-pointer"
                   >
                     <motion.img
-                      src={cert.image}
+                      src={asset(cert.image)}
                       alt={cert.title}
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.25 }}
@@ -237,7 +238,7 @@ export default function CertificatesSection(): JSX.Element {
                 </button>
               </div>
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg border border-zinc-900 bg-zinc-900/30 flex items-center justify-center">
-                <img src={activeCert.image} alt={activeCert.title} className="h-full w-full object-contain" />
+                <img src={asset(activeCert.image)} alt={activeCert.title} className="h-full w-full object-contain" />
               </div>
             </motion.div>
           </div>

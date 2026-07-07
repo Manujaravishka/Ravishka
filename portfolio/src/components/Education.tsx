@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { HiOutlineAcademicCap } from 'react-icons/hi';
 import { IoSchoolOutline } from 'react-icons/io5';
 import { FiAward } from 'react-icons/fi';
+import { asset } from '@/lib/asset';
 
 interface EducationItem {
   id: number;
@@ -109,7 +110,7 @@ export default function EducationSection(): JSX.Element {
                 <div className="absolute -left-[32px] top-1 flex h-16 w-16 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-950 text-zinc-400 transition-all duration-300 group-hover:border-gray-500/60 group-hover:shadow-[0_0_25px_rgba(107,114,128,0.30)] overflow-hidden">
                   {edu.logoUrl ? (
                     <img 
-                      src={edu.logoUrl} 
+                      src={asset(edu.logoUrl)} 
                       alt={edu.institute} 
                       className="h-full w-full object-contain p-1 rounded-lg opacity-95 group-hover:opacity-100 transition-opacity duration-200"
                     />

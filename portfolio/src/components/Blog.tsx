@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { JSX } from 'react';
 import Button from './Button';
+import { asset } from '@/lib/asset';
 
 
  const blogPosts = [
@@ -117,11 +118,11 @@ export default function Blog(): JSX.Element {
               <article className="relative h-full overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:border-white/30 hover:bg-white/10 hover:shadow-2xl hover:shadow-white/5">
                 {/* Video */}
                 <div className="relative h-56 w-full overflow-hidden bg-white/5">
-                 <img
-  src={post.image}
-  alt={post.title}
-  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-/>
+                  <img
+                    src={asset(post.image)}
+                    alt={post.title}
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
 
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
