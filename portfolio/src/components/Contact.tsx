@@ -3,6 +3,7 @@
 import { JSX, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import Button from "./Button";
 
 export default function Contact(): JSX.Element {
   const formRef = useRef<HTMLFormElement>(null);
@@ -123,24 +124,22 @@ export default function Contact(): JSX.Element {
               />
             </div>
 
-            <button
+            <Button
               type="submit"
+              fullWidth
+              loading={isSending}
               disabled={isSending}
-              className="group relative w-full mt-2 py-3.5 rounded-xl bg-zinc-950 hover:bg-zinc-800 disabled:bg-zinc-600 text-white font-semibold text-sm tracking-wide transition-all duration-300 flex items-center justify-center gap-1.5 shadow-md shadow-zinc-950/10"
+              variant="secondary"
+              rightIcon={
+                !isSending ? (
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 19L19 5M19 5H9M19 5v10" />
+                  </svg>
+                ) : undefined
+              }
             >
               {isSending ? "Sending..." : "Send Message"}
-              {!isSending && (
-                <svg 
-                  className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  strokeWidth="2.5" 
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 19L19 5M19 5H9M19 5v10" />
-                </svg>
-              )}
-            </button>
+            </Button>
           </form>
         </motion.div>
       </div>

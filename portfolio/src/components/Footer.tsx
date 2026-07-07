@@ -26,7 +26,6 @@ export default function Footer(): JSX.Element {
 
         {/* Right Side: Social Navigation Links (Pure SVGs) */}
         <div className="flex items-center gap-5">
-          {/* GitHub */}
           <a
             href="https://github.com/Manujaravishka"
             target="_blank"
@@ -40,7 +39,6 @@ export default function Footer(): JSX.Element {
             </svg>
           </a>
 
-          {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/manuja-ravishka-4206a9232/"
             target="_blank"
@@ -55,7 +53,6 @@ export default function Footer(): JSX.Element {
             </svg>
           </a>
 
-          {/* Facebook */}
           <a
             href="https://web.facebook.com/manuja.ravishka.2025"
             target="_blank"
@@ -68,7 +65,6 @@ export default function Footer(): JSX.Element {
             </svg>
           </a>
 
-          {/* Medium */}
           <a
             href="https://medium.com/@manujaravishka2004"
             target="_blank"
@@ -81,7 +77,6 @@ export default function Footer(): JSX.Element {
             </svg>
           </a>
 
-          {/* Stack Overflow */}
           <a
             href="https://stackoverflow.com/users/27146289/manuja-ravishka"
             target="_blank"

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { JSX } from 'react';
+import Button from './Button';
 
 
  const blogPosts = [
@@ -184,28 +185,20 @@ export default function Blog(): JSX.Element {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-14 text-center"
         >
-          <a
+          <Button
+            variant="primary"
+            size="lg"
             href="https://medium.com/@manujaravishka2004"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white transition hover:-translate-y-1 hover:border-white/40 hover:bg-white/10"
+            rightIcon={
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            }
           >
             View All Articles
-
-            <svg
-              className="h-4 w-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-              />
-            </svg>
-          </a>
+          </Button>
         </motion.div>
       </div>
     </section>

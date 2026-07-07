@@ -2,6 +2,7 @@
 
 import React, { JSX } from 'react';
 import { motion } from 'framer-motion';
+import Button from './Button';
 
 export default function About(): JSX.Element {
   // Social media links
@@ -213,28 +214,22 @@ export default function About(): JSX.Element {
               transition={{ duration: 0.7, delay: 0.6 }}
               className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:justify-start mt-6"
             >
-              <motion.a
-                href="#contact"
-                whileHover={{ scale: 1.05, boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-block w-full sm:w-auto text-center rounded-full bg-black px-6 sm:px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-white transition duration-300"
-              >
+              <Button variant="secondary" href="#contact">
                 Get In Touch
-              </motion.a>
+              </Button>
 
-              {/* Download CV Button - Now visible on mobile */}
-              <motion.a
+              <Button
+                variant="secondary"
                 href="/cv.pdf"
                 download
-                whileHover={{ scale: 1.05, boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full border-2 border-black bg-transparent px-6 sm:px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-black transition duration-300 hover:bg-black hover:text-white"
+                leftIcon={
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                  </svg>
+                }
               >
-                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                </svg>
                 Download CV
-              </motion.a>
+              </Button>
             </motion.div>
           </motion.div>
         </div>
