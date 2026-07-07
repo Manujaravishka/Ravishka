@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Outfit } from 'next/font/google'
+// @ts-ignore
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
   description:
     'UI/UX Designer passionate about creating modern, user-friendly, and visually engaging digital experiences with clean and creative designs.',
   icons: {
-    icon: '/pictures/favicons.ico',
+    icon: '/favicons.ico',
   },
 }
 

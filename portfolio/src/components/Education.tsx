@@ -65,7 +65,7 @@ export default function EducationSection(): JSX.Element {
     <section id="education" className="relative w-full bg-black px-6 py-28 text-gray-100 sm:px-10 lg:px-16 overflow-hidden">
       
       {/* WATERMARK - subtle, true watermark style */}
-  <div className="absolute inset-0 pointer-events-none z-[] opacity-5 mix-blend-screen">
+  <div className="absolute inset-0 pointer-events-none z-0 opacity-5 mix-blend-screen">
   <img
     src="https://i.pinimg.com/736x/47/95/b5/4795b55039c8ff8e6f30e0b06534137e.jpg"
     alt=""

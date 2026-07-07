@@ -3,6 +3,7 @@
 import { JSX } from 'react';
 import { motion } from 'framer-motion';
 import Button from './Button';
+import { FaGithub } from 'react-icons/fa';
 
 // ව්‍යාපෘති දත්ත
 const projects = [
@@ -23,13 +24,23 @@ const projects = [
   },
   {
     id: 2,
-    title: 'DailyForge',
-    subtitle: 'Forge Your Future, One Strike at a Time',
-    description: 'Maison Florelle is a full-stack luxury floral e-commerce platform designed to deliver a premium online shopping experience with modern UI/UX.',
-    tags: ['React Native', 'Firebase', 'TypeScript', 'Expo'],
-    image: 'project/project_2.png',
-    link: '#',
-    codeLink: '#',
+    title: 'Maison Florelle',
+    subtitle: 'Luxury Floral E-Commerce Platform',
+    description: 'Maison Florelle is a production-ready luxury floral marketplace built with React, TypeScript, Node.js, Express, and MongoDB. The platform includes customer authentication, Google OAuth, shopping cart, secure checkout, order tracking, AI-powered bouquet generation, analytics dashboard, product management, review system, and responsive UI with premium animations.',
+    tags: [ "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Tailwind CSS",
+    "Vite",
+    "JWT",
+    "Google OAuth",
+    "Cloudinary",
+    "Vercel"],
+    image: 'project/project_3.png',
+    link: 'https://github.com/Manujaravishka/Flower-Shop-Backend',
+    codeLink: 'https://github.com/Manujaravishka/Flower-Shop-Frontend',
     icon: (
       <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -38,13 +49,20 @@ const projects = [
   },
   {
     id: 3,
-    title: 'PropertyPulse',
-    subtitle: 'Backend API & Frontend Platform',
-    description: 'A robust RESTful API and full real estate platform featuring AI‑powered analytics, Stripe payments, and Cloudinary uploads.',
-    tags: ['Node.js', 'Express', 'MongoDB', 'TypeScript'],
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800',
-    link: '#',
-    codeLink: '#',
+    title: 'NIVORA DESIGNS',
+    subtitle: 'Premium Graphic Design Studio Website',
+    description:"NIVORA DESIGNS is a premium portfolio website built to establish a strong online presence for a creative design studio. The website highlights professional design services, portfolio projects, pricing packages, and contact options through a clean, minimal, and highly interactive user interface optimized for performance and SEO.",
+    tags: ["Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Framer Motion",
+    "GitHub Pages",
+    "Responsive",
+    "SEO",
+    "Static Export"],
+    image: 'project/project_4.png',
+    link: 'https://github.com/Manujaravishka/nivora-designs',
+    codeLink: 'https://github.com/Manujaravishka/nivora-designs',
     icon: (
       <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -53,13 +71,19 @@ const projects = [
   },
   {
     id: 4,
-    title: 'FutureProject Alpha',
-    subtitle: 'Decentralized Data Mesh',
-    description: 'An exploratory project testing peer-to-peer data replication protocols with native encryption frameworks.',
-    tags: ['Rust', 'Wasm', 'Web3', 'Libp2p'],
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800',
-    link: '#',
-    codeLink: '#',
+    title: 'Cambridge International School',
+    subtitle: 'Modern Educational Institution Website',
+    description: 'Cambridge International School is a professional educational website built to strengthen the school digital presence. The platform provides information about academic programs, admissions, faculty, campus facilities, student achievements, events, and contact details while delivering a fast, responsive, and accessible experience for parents and prospective students.',
+    tags: ["React",
+    "JavaScript",
+    "Tailwind CSS",
+    "Responsive",
+    "Framer Motion",
+    "Educational",
+    "SEO"],
+    image: 'project/project_2.png',
+    link: 'https://github.com/Manujaravishka/Gittering-Stars',
+    codeLink: 'https://github.com/Manujaravishka/Gittering-Stars',
     icon: (
       <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
@@ -68,13 +92,19 @@ const projects = [
   },
   {
     id: 5,
-    title: 'FutureProject Beta',
-    subtitle: 'Automated Infrastructure Pipeline',
-    description: 'Highly available multi-region architecture configurations managed natively through cloud-agnostic blueprints.',
-    tags: ['AWS', 'Terraform', 'Docker', 'GitHub Actions'],
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800',
-    link: '#',
-    codeLink: '#',
+    title: 'Ceylon Panda Travel',
+    subtitle: 'Tourism & Travel Agency Website',
+    description: 'Ceylon Panda Travel is a professional tourism website designed to establish a strong online presence for a Sri Lankan travel agency. The platform showcases tour packages, popular destinations, transportation services, travel experiences, customer testimonials, and inquiry options with a responsive and visually appealing design optimized for performance and SEO.',
+    tags: ["HTML5",
+    "CSS3",
+    "JavaScript",
+    "Responsive Design",
+    "SEO",
+    "Travel",
+    "Business Website"],
+    image: 'project/project_5.png',
+    link: 'https://github.com/Manujaravishka/web-site',
+    codeLink: 'https://github.com/Manujaravishka/web-site',
     icon: (
       <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
@@ -130,7 +160,7 @@ export default function Projects(): JSX.Element {
                   </div>
 
                   <div className="flex items-center gap-4 mt-6 pt-6 border-t border-white/[0.05]">
-                    <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="text-xs font-mono text-gray-500 hover:text-white transition">SOURCE</a>
+                    <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors" aria-label="View source code on GitHub"><FaGithub size={18} /></a>
                     <Button variant="primary" href={project.link} target="_blank" rel="noopener noreferrer" size="sm">Live Demo</Button>
                   </div>
                 </div>

@@ -45,10 +45,15 @@ const Particle = memo(({ index }: { index: number }) => {
 Particle.displayName = "Particle";
 
 export default function IntroLoader({ children }: { children: React.ReactNode }) {
+  const [mounted, setMounted] = useState(false);
   const [progress, setProgress] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
   const [statusIndex, setStatusIndex] = useState(0);
   const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -97,7 +102,7 @@ export default function IntroLoader({ children }: { children: React.ReactNode })
             {/* Grid background */}
             <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:60px_60px]" />
 
-            {Array.from({ length: 6 }).map((_, i) => (
+            {mounted && Array.from({ length: 6 }).map((_, i) => (
               <Particle key={i} index={i} />
             ))}
 

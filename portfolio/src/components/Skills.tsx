@@ -67,7 +67,7 @@ const positions = [
 
 export default function SkillsSection() {
   return (
-    <section className="relative w-full bg-black py-20 overflow-hidden">
+    <section id="skills" className="relative w-full bg-black py-20 overflow-hidden">
       <div className="container mx-auto px-8 flex flex-col items-center justify-center text-center">
 
         {/* මැදට කළ පෙළ කොටස */}

@@ -50,7 +50,7 @@ export default function Service() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.05),transparent_60%)] pointer-events-none" />
 
       {/* Watermark Image - MORE VISIBLE (increased opacity and stronger blend) */}
-      <div className="absolute inset-0 pointer-events-none z-0 opacity-1590 mix-blend-overlay">
+      <div className="absolute inset-0 pointer-events-none z-0 opacity-[0.15] mix-blend-overlay">
         <img
           src="https://i.pinimg.com/736x/47/95/b5/4795b55039c8ff8e6f30e0b06534137e.jpg"
           alt="watermark design element"
